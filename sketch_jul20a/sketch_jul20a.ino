@@ -11,7 +11,7 @@ void loop()
 {
     for(int i=0; i<10000; i++)
     {
-        led.DigitDisplayWrite(D0, D1, i);
+        led.DigitDisplayWrite(D2, D3, i);
         Nefry.ndelay(100);
         Nefry.println("TEST");
     }
