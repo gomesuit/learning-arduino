@@ -9,4 +9,4 @@ build:
 
 # make upload PORT=/dev/cu.usbmodem13201
 upload:
-	arduino-cli upload -b arduino:renesas_uno:unor4wifi -p $(PORT) -i ./main.hex
+	arduino-cli upload --fqbn arduino:renesas_uno:unor4wifi -p $(PORT) -i ./main.hex
