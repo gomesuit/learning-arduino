@@ -2,7 +2,7 @@ PORT:=
 
 # make flash PORT=/dev/cu.usbmodem13201
 flash:
-	tinygo flash -target arduino -port $(PORT)
+	tinygo flash -target arduino -port $(PORT) .
 
 build:
 	tinygo build -target=arduino -o ./main.hex ./main.go
